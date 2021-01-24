@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.body-bg{ 
+     background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #DD2476, #FF512F);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.bg-nav{ background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.center{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.center h1{
+    font-family:'Potta One', cursive;
+}
+.txtstyle{
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 82px ;
+    font-family: 'Satisfy', cursive;
+
+}
+.mrx-10{
+    margin-left: 10px;
+}
+.nav-head{
+    margin: 0;
+}
+.nav-head-1{
+    margin: 20px;
+}
