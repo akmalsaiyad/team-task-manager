@@ -3,22 +3,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
 
 
+*
+{
+    box-sizing: border-box;
+}
+
 .body-bg{ 
      background: #FF512F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to right, #DD2476, #FF512F);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
-.bg-nav{ background: #1FA2FF;  /* fallback for old browsers */
+.bg-nav{ 
+    background: #1FA2FF;  /*fallback for old browsers*/
     background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin :0 10px ;
 }
-.bg-nav a{
-    color: aliceblue;
+
+.navx{
+    
+    margin:0 10px 10px 10px;
+    padding: 10px;
+    /* border-radius: 50px;
+background-color: white;
+box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,.1); */
+
+
+}
+.navx li a{
+    color:black;
+    margin: 2px 5px 2px;
     font-family: 'Old Standard TT', serif;
     text-decoration: none;
+    font-size: 18px;
 }
+
+.navx li a:hover{
+    border: 2px;
+    border-bottom: #DD2476;
+}
+
+
+
+
 .center{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -27,10 +55,10 @@
     font-family:'Potta One', cursive;
 }
 .txtstyle{
-    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
+     background: linear-gradient(to right, #DD2476, #FF512F);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    font-size: 82px ;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px ;
     font-family: 'Satisfy', cursive;
 
 }
@@ -45,6 +73,7 @@
 }
 
 .top-head{
-height: 50vh;
+/* height: 50vh; */
 
 }
+
