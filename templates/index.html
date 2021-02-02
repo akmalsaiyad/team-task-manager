@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/StyleNeon.css') }}">
    
     <title>Home</title>
     
   </head>
   <body class="body-bg">
-    <div class="top-head"> 
-      <header class="bg-nav center nav-head">
-        <span class="nav-head-1">
+      <header class="center bg-nav">
+        <span >
           <h1>Team Task Manager</h1>
           <h3>Flask App</h3>  
         </span>
@@ -24,16 +24,13 @@
         <!-- nav bar -->
         
         <nav class="navbar navbar-expand-md navbar-light navx">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="/"><img src="{{url_for('static', filename = 'img/logobg.png')}}" alt="Logo" class="logo" ></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span ><img src="{{url_for('static', filename='img/hamburger.png')}}" alt=""></span>
           </button>
         
           <div class="collapse navbar-collapse navt" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
+            <ul class="navbar-nav ml-auto navt">
               <li class="nav-item"> <a href="#" class="nav-link">Guide</a></li>
               <li class="nav-item"> <a href="#" class="nav-link">Dashborad</a></li>
               <li class="nav-item"> <a href="#" class="nav-link">About</a></li>
@@ -73,61 +70,102 @@
          </ul>
          </div>
         </nav> -->
-        <span class="mt-4 txtstyle"> 
+        <span class="txtstyle"> 
             Work is worship... So always worship on time!
         </span>
       </header>
-      
-    </div>
-    <div class="container mt-4">
+  
+
+    <!-- bot head -->
+    <div class="container-fluid ">
         <div class="row">
+          <!-- left -->
             <div class="col-lg-4 col-md-4 col-sm-12 mt-5" id="login">
-                <div class="card shadow-lg mb-5 rounded bg-nav ">  
-                    <div class="card-body ">
-                      <!-- <p>Already a user? Please Login.</p> -->
-                        <form action="" class="form">
-                            <label for="">Email</label><br>
-                            <input type="email" class="form-control"><br>
-                            <label for="">Password</label><br>
-                            <input type="password" class="form-control"><br><br>
-                            <div class="d-grid gap-2 col-6 mx-auto">
-                            <input type="submit" class="btn btn-lg btn-block btn-primary" value="Login">
-                        </div>
-                        </form>
-                    </div>
+                 <center> <img src="{{url_for('static',filename='img/login.png')}}" class="card-img-top" style="width: 80%;" alt="login"> 
+                 <br> 
+                 <div class="ct-btn">
+                  <a href="/login">
+                 <button class="btn btn-lg pl-5 pr-5 btn-primary sky-neon" type="submit">Login</button>
+                </a>
                 </div>
+                </center>
+                    
             </div>
-        <!-- NEW -->
-          <div class="col-lg-4 col-md-4 col-sm-12 center align-items-stretch mb-5" >
-              <!-- <div class="card shadow-lg mb-5 ">  
-                  <div class="card-body"> -->
-                    <img src="{{ url_for('static',filename='img/bothead.png')}}" alt="image" style="width: 100%;">
-                     <!-- </div>
-              </div> -->
+        <!-- center -->
+          <div class="col-lg-4 col-md-4 col-sm-12 center" >
+                    <img src="{{ url_for('static',filename='img/bthd1.png')}}" alt="image" style="width: 100%;">
+                    <p class="quote">EITHER YOU RUN THE DAY <br> OR THE DAY RUNS YOU</p>
           </div>
-      
+      <!-- right -->
           <div class="col-lg-4 col-md-4 col-sm-12 " id="login">
-            <div class="card shadow-lg mb-5 rounded bg-nav">  
-                <div class="card-body">
-                  <!-- <p>New here? Please Sign up or watch the <a href="#">tutorial</a> to know how to use.</p> -->
-                  <form action="" class="form">
-                    <label for="">Name</label><br>
-                    <input type="text" class="form-control"><br>
-                    <label for="">Email</label><br>
-                    <input type="email" class="form-control"><br>
-                    <label for="">Password</label><br>
-                    <input type="password" class="form-control"><br><br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <input type="submit" class="btn btn-lg btn-block btn-primary" value="Sign up">
-                </div>
-                </form>
-                </div>
-            </div>
+            <center> <img src="{{url_for('static',filename='img/register1.png')}}" class="card-img-top" style="width: 62%;" alt="Sign Up"> 
+            <br> 
+            <div class="ct-btn">
+             <a href="/register">
+            <button class="btn btn-lg pl-5 pr-5 btn-primary sky-neon" type="submit">Sign Up</button>
+           </a>
+           </div>
+           </center>
+               
+       </div>
         </div>
     </div>
-  </div>
 
- </div>
+<section id="guide" class="mid">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quos distinctio tenetur sit quas nihil facilis obcaecati quasi, laborum aspernatur? Fugit hic atque dignissimos soluta, ipsum doloribus at amet officiis aliquam pariatur mollitia placeat consequuntur commodi beatae expedita natus deserunt! Commodi, officiis? Odio suscipit ipsa sequi voluptatem enim blanditiis veniam vel soluta exercitationem fugiat! Quo numquam alias facere ipsum dolorum, et eaque explicabo tempore expedita recusandae assumenda eos ab quod eveniet asperiores, ut nesciunt nulla mollitia praesentium iusto officia inventore hic voluptatem nemo. Doloribus, tempora enim, illo consectetur possimus commodi quia fugit quae error quas ducimus obcaecati repellat deserunt? Accusantium quaerat unde rem cumque magni commodi distinctio expedita nostrum? Quod aperiam dolores quae tenetur temporibus iusto, nisi numquam perferendis debitis distinctio a fugiat vitae ratione, eos dolore cumque consequuntur. Mollitia laborum eveniet sapiente. Earum odio nam molestias excepturi perspiciatis repellat, nulla beatae enim? Reiciendis, nesciunt odio suscipit non obcaecati tempora voluptas vitae repudiandae eius nam fugit possimus, impedit iste dolorem excepturi? Pariatur atque nam sapiente maxime at dolores, illo nulla corporis rem eligendi est maiores voluptate officia reprehenderit, corrupti, vitae numquam! Velit, sunt nobis. Consequatur cumque voluptatum nostrum quod accusantium doloremque assumenda! Eligendi aut non commodi repellendus consequatur debitis, modi est quidem provident esse delectus amet? At placeat rerum corrupti, debitis ex error quae labore autem nemo a! Odit, labore eius nesciunt cum perspiciatis fuga exercitationem adipisci, nobis atque ad non modi libero, earum eos vitae soluta! Ipsam id adipisci expedita voluptatum, maxime corporis excepturi, corrupti animi atque ab vel! Corrupti, et fugiat distinctio voluptatibus alias possimus minima cum iusto qui quia unde praesentium fuga repellat sapiente sit consequuntur ducimus! Minima porro earum necessitatibus beatae quis quam inventore? Sunt molestiae facilis atque quidem corporis natus, vitae tempora quisquam illum magni exercitationem voluptatem rem reiciendis eligendi sequi aliquam totam aperiam provident nam ipsam, voluptate ipsa? Repellat eius iusto voluptas illum. Nemo, consequatur possimus! Repellendus dicta cupiditate neque iste non vitae culpa obcaecati qui dolorum soluta. Debitis provident quaerat, assumenda earum voluptatem aliquid architecto beatae corporis sed. Alias, cumque similique tenetur ad, expedita illo reiciendis deleniti voluptas veritatis laudantium rerum dignissimos autem! Ullam fuga saepe doloribus quo, necessitatibus neque soluta, deleniti voluptates ad iusto hic dolores aliquid quaerat nisi at. Deserunt pariatur doloremque modi, repellendus voluptatum voluptates quaerat aspernatur dicta impedit amet debitis. Illum, quo ullam totam expedita corrupti saepe vitae aspernatur numquam doloremque iusto? Illum eligendi consectetur adipisci obcaecati, commodi nemo sequi voluptatum corporis dolorum voluptate, ab repellat quae eos alias modi veritatis molestias voluptas eaque odit dicta voluptates veniam quibusdam aut. Harum quisquam cumque quod praesentium aperiam magnam molestias, nam quam repudiandae odit, enim consectetur alias in molestiae facilis blanditiis quibusdam est iusto qui! Exercitationem, maxime temporibus, officiis soluta vel amet dolores numquam ipsa deleniti dolor rem optio, minus totam officia. Odio, perspiciatis natus est blanditiis voluptatum, tempore ipsa aliquam, quam perferendis cumque quas ad sed asperiores assumenda quisquam distinctio atque dolor porro minus accusamus temporibus eius! Numquam inventore corrupti incidunt excepturi, accusantium libero culpa itaque voluptates quia doloremque accusamus odit repellat neque officiis reprehenderit iste error alias hic ipsam quis labore. Sunt molestias, quasi alias saepe ipsa qui odit at expedita minima praesentium nihil doloremque aliquid inventore maxime distinctio repellendus asperiores perspiciatis accusantium. Tenetur molestiae nostrum excepturi, mollitia voluptatum ipsam, architecto esse at quisquam corporis nam sunt! Obcaecati exercitationem ratione est ut. Atque?
+</section>
+    <section>
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi dolore reprehenderit iusto incidunt, earum quis possimus itaque alias similique pariatur necessitatibus quibusdam recusandae rerum beatae. Quas nam debitis recusandae!
+    </section>
+    <!-- bot head 2 -->
+   <!-- . 
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-5" id="login">
+              <div class="card shadow-lg mb-5 rounded bg-nav ">  
+                  <div class="card-body ">
+                      <form action="" class="form">
+                          <label for="">Email</label><br>
+                          <input type="email" class="form-control"><br>
+                          <label for="">Password</label><br>
+                          <input type="password" class="form-control"><br><br>
+                          <div class="d-grid gap-2 col-6 mx-auto">
+                            <input type="submit" class="btn btn-lg btn-block btn-primary" value="Login">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 center align-items-stretch mb-5" >
+                  <img src="{{ url_for('static',filename='img/bothead.png')}}" alt="image" style="width: 100%;">
+        </div>
+    
+        <div class="col-lg-4 col-md-4 col-sm-12 " id="login">
+          <div class="card shadow-lg mb-5 rounded bg-nav">  
+              <div class="card-body">
+                <form action="" class="form">
+                  <label for="">Name</label><br>
+                  <input type="text" class="form-control"><br>
+                  <label for="">Email</label><br>
+                  <input type="email" class="form-control"><br>
+                  <label for="">Password</label><br>
+                  <input type="password" class="form-control"><br><br>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <input type="submit" class="btn btn-lg btn-block btn-primary" value="Sign up">
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+. -->
+  <!-- end head -->
+
+  <!-- button -->
+<!-- end button -->
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
